@@ -1,5 +1,7 @@
-def employee():
+def show_employee():
     name = input("Enter employee name: ")
-    print("Your name is : ", name)
+    salary = int(input("Enter employee salary: "))
+    print("Your name is: ", name + " " + "and your salary is: ", salary)
 
-employee()
+show_employee()
+
