@@ -1,1 +1,3 @@
-print("Python training tutorial")
+from os import name
+
+
