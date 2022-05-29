@@ -8,7 +8,7 @@ class BankAccount:
     def Deposit(self, d):
         self.balance = self.balance + d
 
-    # Create a withdrawal methof
+    # Create a withdrawal method
     def Withdrawal(self, w):
         if self.balance < w:
             print('Insufficient funds')
@@ -25,10 +25,11 @@ class BankAccount:
         print('----------------------')
         print('Your account number :', self.accountNumber )
         print('Your name is :', self.name )
-        print('Your account details :', 'R', self.balance)
+        print('Your account balance :', 'R', self.balance)
 
 # Testing the code
-myacc = BankAccount(4568912088, 'Jermaine', 27000)
-myacc.Withdrawal(350)
-myacc.Deposit(5000)
+myacc = BankAccount(4568912088, 'Joe Soap', 2000)
+myacc.Withdrawal(500)
+myacc.Deposit(50)
+myacc.bankFees()
 myacc.display()
